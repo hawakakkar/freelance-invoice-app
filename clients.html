@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clients</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html">Dashboard</a>
+      <a href="clients.html">Clients</a>
+      <a href="invoices.html">Invoices</a>
+    </nav>
+
+    <h1 class="heading1">Clients</h1>
+
+    <form id="clientForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="company" placeholder="Company" />
+      <input type="text" id="notes" type="text" placeholder="Notes" />
+      <button type="submit">Add Client</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Company</th>
+          <th>Notes</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="clientTable"></tbody>
+    </table>
+
+    <script type="module" src="./js/clients.js"></script>
+  </body>
+</html>

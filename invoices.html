@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Invoices</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html">Dashboard</a>
+      <a href="clients.html">Clients</a>
+      <a href="invoices.html">Invoices</a>
+    </nav>
+
+    <h1 class="heading1">Invoices</h1>
+
+    <form id="invoiceForm">
+      <select id="clientSelect"></select>
+      <input type="text" id="service" placeholder="Service Title" required />
+      <input type="text" id="desc" placeholder="Description" />
+      <input type="number" id="amount" placeholder="Amount" required />
+      <input type="date" id="date" required />
+      <button type="submit">Add Invoice</button>
+    </form>
+
+    <div id="invoiceList"></div>
+
+    <script type="module" src="./js/invoices.js"></script>
+  </body>
+</html>
