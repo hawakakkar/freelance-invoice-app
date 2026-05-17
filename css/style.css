@@ -1,1 +1,199 @@
-create css folder
+/* The global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #3e022f;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f3f3;
+  padding: 25px;
+}
+
+/*The navbar page*/
+
+.navbar {
+  display: flex;
+  gap: 25px;
+  background: #3e022f;
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  justify-content: center;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  margin-right: 10px;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: rgb(84, 35, 35);
+}
+
+/* The headings*/
+
+.heading1 {
+  margin-bottom: 20px;
+}
+
+/* The dashboard card */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  cursor: default;
+}
+
+/* The form style of client
+*/
+
+#clientForm {
+  background: rgb(249, 246, 246);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#invoiceForm {
+  background: rgb(249, 246, 246);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+form input,
+form select {
+  padding: 10px;
+  width: 220px;
+  border-radius: 6px;
+  border: 2px solid #ccc;
+  outline: none;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #3e022f;
+}
+
+/* The buttons*/
+
+button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* primary */
+button {
+  background: #6b7280;
+  color: white;
+}
+
+button:hover {
+  background: #3e022f;
+}
+
+/* delete */
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #b52a37;
+}
+
+/* toggle */
+.toggle-btn {
+  background: #28a745;
+  color: white;
+}
+
+.toggle-btn:hover {
+  background: #1f7a34;
+}
+
+/* The table of clients */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+th {
+  background: #3e022f;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+td {
+  padding: 12px;
+}
+
+tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+/* The invoice card */
+
+#invoiceList div {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/*The toggle button*/
+.toggle-btn {
+  margin-top: 20px;
+  background: #6b7280;
+  color: white;
+}
+
+.toggle-btn:hover {
+  background: #3e022f;
+}
+
+/*The delete button*/
+.delete-btn {
+  margin-top: 20px;
+  background: #ef4444;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
